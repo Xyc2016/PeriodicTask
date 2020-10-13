@@ -11,7 +11,7 @@ def print_sched_time_and_now(sched_time):
     pass
 
 
-task = PeriodicTask(print_sched_time_and_now, datetime.now()-timedelta(seconds=1), timedelta(seconds=1))
+task = PeriodicTask(print_sched_time_and_now, datetime.now() - timedelta(seconds=1), timedelta(seconds=1))
 task.start()
 
 input()
